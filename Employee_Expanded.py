@@ -1,5 +1,5 @@
-# Code used to input new employees into a dictionary with their name, age and email 
-employee_list = [] #Empty dictionary to list employees 
+# Code used to input new employees into a list with their name, age and email 
+employee_list = [] #Empty list of employees 
 while True: #begins loop 
     try:
         employees = int(input('How many employees: ')) #input for number of employees
@@ -22,7 +22,7 @@ for n in range (employees): #for loop uses the number of employees indicated fro
         print('Employee too young')#indicator for the value error that employee is to young
         
     employee_record["email"]  = name[0] + "." + name[1] + '@company.com' #concatanate to create employee email 
-    employee_list.append(employee_record) #adds each employee record in the set to the employee_list dictionary
+    employee_list.append(employee_record) #adds each employee record in the set to the employee_list 
 
 print (employee_list) #prints the new employee list with addes records from employee_record
 
